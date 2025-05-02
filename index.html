@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <title>Form Validation</title>
+  </head>
+  <body>
+    <div class="form">
+      <div id="myForm" action="">
+        <label for="name">Name</label>
+        <input
+          type="text"
+          id="name"
+          name="Name"
+          autocomplete="given-name"
+          placeholder="TuetDude"
+        />
+
+        <label for="name">Email</label>
+        <input
+          type="text"
+          id="email"
+          name="Email"
+          placeholder="example.gmail.com"
+        />
+
+        <label for="number">Number</label>
+        <input
+          type="number"
+          id="number"
+          name="Number"
+          placeholder="+91 1234567890"
+        />
+
+        <label for="Password">Password</label>
+        <input type="password" id="pass" name="Password" />
+        <i id="open_eye" class="fa-solid fa-eye"></i>
+        <i id="closed_eye" class="fa-solid fa-eye-slash"></i>
+
+        <label for="name">Conferm Password</label>
+        <input type="password" id="con_pass" name="Con_password" />
+        <i id="open_eye_con" class="fa-solid fa-eye"></i>
+        <i id="closed_eye_con" class="fa-solid fa-eye-slash"></i>
+
+        <button id="butt">Submit</button>
+      </div>
+    </div>
+
+    <div class="errors success" id="errors"></div>
+
+    <!-- jquery Link here -->
+    <script src="jquery.js"></script>
+    <!-- jquery Link here -->
+  </body>
+</html>
